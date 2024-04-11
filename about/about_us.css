@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.banner-section {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.banner-section a {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 25px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.book-room{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 25px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about {
+    background-image: url(../banner.jpg);
+    height: calc(100vh - 97px);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+}
+
+.about-div {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.about-container {
+    background-image: url(../about/about_us.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-header, .room-header, .form-header {
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 17px;
+}
+
+.amenities {
+    margin-top: -45px;
+}
+
+.amenities ul {
+    list-style-type: none;
+}
+
+.fa-solid {
+    margin-right: 15px;
+}
+
+.help-button {
+    background-color: brown;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+    .banner {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-text>h1 {
+        font-size: 30px;
+        margin: 0 -50px;
+        margin-top: -101px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text a {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .amenities {
+        margin-top: -211px;
+        padding-bottom: 71px;
+    }
+
+    .know-button {
+        margin-top: 191px;
+    }
+
+    .help-button {
+        font-size: 13px;
+    }
+}

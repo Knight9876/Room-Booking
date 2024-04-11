@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner-section {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 25px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#Room-type{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin: 25px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-header {
+    text-align: center;
+    padding: 91px;
+    color: aquamarine;
+    font-size: 45px;
+}
+
+.form-container {
+    background-image: url(../banner.jpg);
+    background-size: cover;
+    height: calc(100vh - 97px);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+    border: 3px solid;
+    width: max-content;
+    padding: 100px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 250px;
+}
+
+input:focus {
+    background-color: white;
+}
+
+#room-type {
+    background-color: transparent;
+}
+
+#room-type:focus {
+    background-color: white;
+    cursor: pointer;
+}
+
+#submit {
+    font-weight: bolder;
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 3px solid;
+}
+
+#room-type {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 265px;
+}
+
+.form-group label {
+    padding-right: 100px;
+    align-items: center;
+}
+
+.know-button {
+    background-color: aqua;
+    font-size: 18px ;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-container {
+    background-image: url(../about/about_us.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-header {
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.amenities {
+    margin-top: -45px;
+}
+
+.amenities ul {
+    list-style-type: none;
+}
+
+.fa-solid {
+    margin-right: 15px;
+}
+
+.help-button {
+    background-color: brown;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        font-size: 23px;
+    }
+    .form-header {
+        font-size: 25px;
+        padding: 70px 80px;
+    }
+
+    .booking-form {
+        padding: 0px 70px 70px 70px;
+    }
+
+    .form-group label {
+        padding-left: 100px;
+    }
+
+    form {
+        padding: 50px;
+    }
+
+    #email {
+        margin-right: 54px;
+    }
+
+    #booking-date {
+        margin-right: -8px;
+    }
+
+    #room-type {
+        margin-right: -34px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .amenities {
+        margin-top: -211px;
+        padding-bottom: 71px;
+    }
+
+    .know-button {
+        margin-top: 191px;
+    }
+
+    .help-button {
+        font-size: 13px;
+    }
+}
